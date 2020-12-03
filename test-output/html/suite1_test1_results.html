@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - BankManager Login Test</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>BankManager Login Test</h1>
+<p>
+  Test duration: 60.605s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.bank.testsuite.BankTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  bankMangerShouldAddCustomerSuccessfully
+      </td>
+  <td class="duration">
+    30.319s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Customer added successfully with customer id :6}<br/>
+&nbsp; (Session info: chrome=87.0.4280.66): Customer added successfully with customer id :6<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;DESKTOP-JDKLD3R&apos;, ip: &apos;192.168.0.13&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61968}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 5a9727776e15d2a9a804c42c5e9bb4c1</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)<br />
+              com.bank.utility.Utility.takeScreenShot(Utility.java:279)<br />
+              com.bank.customlisteners.CustomListeners.onTestSuccess(CustomListeners.java:22)<br />
+              org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:70)<br />
+              org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:636)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+              org.testng.TestRunner.run(TestRunner.java:505)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
+              org.testng.TestNG.run(TestNG.java:1017)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.bank.testsuite.BankTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  bankMangerShouldOpenAccountSuccessfully
+      </td>
+  <td class="duration">
+    3.766s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Clicking on Bank Manager Login Link.By.xpath: //button[contains(text(),'Bank Manager Login')]<br>
+                                Clicking on Open Account Tab By.xpath:  //body/div[3]/div[1]/div[2]/div[1]/div[1]/button[2]<br>
+                                select name of customerBy.xpath: //select[@id='userSelect']<br
+                                Click to see screenshot
+                                <a target = "_blank" href=C:\Users\Admin\Idea Projects\xyz_bank/test-output/html/bankMangerShouldOpenAccountSuccessfullyWed_Dec_02_17_26_28_GMT_2020.jpg>Screenshot</a>
+                                <br>
+                                <br>
+                                <a target = "_blank" href=C:\Users\Admin\Idea Projects\xyz_bank/test-output/html/bankMangerShouldOpenAccountSuccessfullyWed_Dec_02_17_26_28_GMT_2020.jpg><img src=C:\Users\Admin\Idea Projects\xyz_bank/test-output/html/bankMangerShouldOpenAccountSuccessfullyWed_Dec_02_17_26_28_GMT_2020.jpg height=200 width=200></img></a>
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

@@ -1,0 +1,189 @@
+<html>
+<head>
+<title>TestNG:  BankManager Login Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>BankManager Login Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Dec 02 17:25:43 GMT 2020</td>
+</tr>
+<tr><td>Total time:</td><td>46 seconds (46472 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.bank.testsuite.BankTest.bankMangerShouldAddCustomerSuccessfully()'><b>bankMangerShouldAddCustomerSuccessfully</b><br>Test class: com.bank.testsuite.BankTest</td>
+<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Customer added successfully with customer id :6}
+  (Session info: chrome=87.0.4280.66): Customer added successfully with customer id :6
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-JDKLD3R&apos;, ip: &apos;192.168.0.13&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61968}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5a9727776e15d2a9a804c42c5e9bb4c1
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.bank.utility.Utility.takeScreenShot(Utility.java:279)
+	at com.bank.customlisteners.CustomListeners.onTestSuccess(CustomListeners.java:22)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace672746064", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace672746064'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Customer added successfully with customer id :6}
+  (Session info: chrome=87.0.4280.66): Customer added successfully with customer id :6
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-JDKLD3R&apos;, ip: &apos;192.168.0.13&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61968}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 5a9727776e15d2a9a804c42c5e9bb4c1
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.bank.utility.Utility.takeScreenShot(Utility.java:279)
+	at com.bank.customlisteners.CustomListeners.onTestSuccess(CustomListeners.java:22)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:70)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:636)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></div></td>
+<td>30</td>
+<td>com.bank.testsuite.BankTest@2b98378d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.bank.testsuite.BankTest.bankMangerShouldAddCustomerSuccessfully()'><b>bankMangerShouldAddCustomerSuccessfully</b><br>Test class: com.bank.testsuite.BankTest<br/>
+<a href="#Output-1574877131" onClick='toggleBox("Output-1574877131", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1574877131" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1574877131">
+Clicking on Bank Manager Login Link.By.xpath: //button[contains(text(),'Bank Manager Login')]<br><br/>
+Clicking on Add Customer Button.By.xpath: //body/div[3]/div[1]/div[2]/div[1]/div[1]/button[1]<br><br/>
+Enter First NameBy.xpath: //body/div[3]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[1]/input[1]<br><br/>
+Enter First NameBy.xpath: //body/div[3]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[2]/input[1]<br><br/>
+Enter Postcode By.xpath: //body/div[3]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/div[3]/input[1]<br><br/>
+Clicking on add customer buttonBy.xpath: //body/div[3]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/form[1]/button[1]<br><br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\Admin\Idea Projects\xyz_bank/test-output/html/bankMangerShouldAddCustomerSuccessfullyWed_Dec_02_17_26_13_GMT_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target = "_blank" href=C:\Users\Admin\Idea Projects\xyz_bank/test-output/html/bankMangerShouldAddCustomerSuccessfullyWed_Dec_02_17_26_13_GMT_2020.jpg><img src=C:\Users\Admin\Idea Projects\xyz_bank/test-output/html/bankMangerShouldAddCustomerSuccessfullyWed_Dec_02_17_26_13_GMT_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>com.bank.testsuite.BankTest@2b98378d</td></tr>
+<tr>
+<td title='com.bank.testsuite.BankTest.bankMangerShouldOpenAccountSuccessfully()'><b>bankMangerShouldOpenAccountSuccessfully</b><br>Test class: com.bank.testsuite.BankTest<br/>
+<a href="#Output-127702987" onClick='toggleBox("Output-127702987", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-127702987" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-127702987">
+Clicking on Bank Manager Login Link.By.xpath: //button[contains(text(),'Bank Manager Login')]<br><br/>
+Clicking on Open Account Tab By.xpath:  //body/div[3]/div[1]/div[2]/div[1]/div[1]/button[2]<br><br/>
+select name of customerBy.xpath: //select[@id='userSelect']<br<br/>
+Click to see screenshot<br/>
+<a target = "_blank" href=C:\Users\Admin\Idea Projects\xyz_bank/test-output/html/bankMangerShouldOpenAccountSuccessfullyWed_Dec_02_17_26_28_GMT_2020.jpg>Screenshot</a><br/>
+<br><br/>
+<br><br/>
+<a target = "_blank" href=C:\Users\Admin\Idea Projects\xyz_bank/test-output/html/bankMangerShouldOpenAccountSuccessfullyWed_Dec_02_17_26_28_GMT_2020.jpg><img src=C:\Users\Admin\Idea Projects\xyz_bank/test-output/html/bankMangerShouldOpenAccountSuccessfullyWed_Dec_02_17_26_28_GMT_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.bank.testsuite.BankTest@2b98378d</td></tr>
+</table><p>
+</body>
+</html>
